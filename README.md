@@ -13,10 +13,10 @@ These steps are written so that a person or an agent can run them in order.
 1. **Add the skill** with the [skills CLI](https://github.com/vercel-labs/skills):
 
    ```sh
-   npx skills add diliev1996/delyan-iliev-skills --skill frontend-pr-evidence -g -y
+   npx skills add diliev1996/delyan-iliev-skills --skill frontend-pr-evidence -g -y -a claude-code -a github-copilot
    ```
 
-   Without the CLI, copy `skills/frontend-pr-evidence` into your agent's skills directory, for example `~/.claude/skills/`.
+   The `-a` flags name the agents to install for; change them to the agents you use. Without the CLI, copy `skills/frontend-pr-evidence` into your agent's skills directory, for example `~/.claude/skills/`.
 
 2. **Install the requirements:**
    - Node.js 20 or later.
